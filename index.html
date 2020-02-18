@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <header class="navbar">
+        <ul class="list-nav">
+            <li>Shopping Card</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contat</a></li>
+        </ul>
+        <span id="Account">Account</span>
+        <ul class="dropdown-content">
+            <li>Profil</li>
+            <li>Setting</li>
+            <li>Logout</li>
+        </ul>
+    </header>
+    <div class="carousel-container">
+        <i class="fas fa-angle-left"id="prevBtn"></i>
+        <i class="fas fa-angle-right"id ="nextBtn"></i>
+        <div class="carousel-slide">
+            <img src="images/shopping3.jpg" id="lastClone"alt="">
+            <img src="images/shopping.jpg" alt="">
+            <img src="images/shopping2.jpg" alt="">
+            <img src="images/shopping3.jpg" alt="">
+            <img src="images/shopping.jpg" id="firstClone" alt="">
+
+        </div>
+    </div> 
+    <div class="products-container">
+        <div class="products-header">
+            <h5 class="product-title"> PRODUCT</h5>
+            <h5 class="price-div"> PRICE </h5>
+            <h5 class="quantity"> QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+            <div class="product-title">
+            <i class="far fa-times-circle removeBtn"></i>
+            <img src="images/sbedri.jpg" alt="">
+            <span> Sbedri white</span>
+            </div>
+            <div class="price-div"><text class="price">25</text>$</div>
+            <div class="quantity">
+                
+                <i id="decrement" class="fas fa-minus-circle minus-btn"></i><input id="ok" class="product-numbers" type="number" value="1" style="max-width : 25px;"><i class="fas fa-plus-circle plus-btn"></i>
+            </div>
+            <div class=total-product>25$</div>
+        </div>
+        
+        <div class="products">
+            <div class="product-title">
+            <i class="far fa-times-circle removeBtn"></i>
+            <img src="images/jacket.jpg" alt="">
+            <span> Black jacket</span>
+            </div>
+            <div class="price-div"> <text class="price">60</text>$</div>
+            <div class="quantity">
+                <i class="fas fa-minus-circle minus-btn"></i>
+                <input class="product-numbers" type="number" value="1" style="max-width : 25px"><i class="fas fa-plus-circle plus-btn"></i>
+            </div>
+            <div class=total-product>60$</div>
+        </div>
+
+        <div class="products">
+            <div class="product-title">
+            <i class="far fa-times-circle removeBtn"></i>
+            <img src="images/bag.jpg" alt="">
+            <span> Big Bag</span>
+            </div>
+            <div class="price-div"> <text class="price">35</text>$</div>
+            <div class="quantity">
+                <i class="fas fa-minus-circle minus-btn"></i>
+                <input class="product-numbers" type="number" value="1" style="max-width : 25px"><i class="fas fa-plus-circle plus-btn"></i>
+            </div>
+            <div class=total-product>35$</div>
+        </div>
+        <div class="footer-product">
+        </div>
+    </div>
+    
+
+
+</body>
+<script src="shopping.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
+</html>
